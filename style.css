@@ -13,6 +13,7 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
+    font-family: "chakra petch", sans-serif;
 }
 
 .conteudo-principal {
@@ -25,20 +26,21 @@ body {
     margin: 0 auto;
 }
 
-.titulo-principal { 
+.conteudo-principal { 
     text-align: left;
     width: 100%;
     font-size: 32px;
 }
 
-.titulo-principal span {
+.conteudo-principal span {
     color: var(--verde);
 }
 
 .botao { 
     font-family: "Crakra Petch", sans-serif;
     background-color: var(--botao-inativo);
-    color: var(--branco); display: flex;
+    color: var(--branco); 
+    display: flex;
     justify-content: center;
     padding: 1em;
     font-size: 18px;
@@ -48,13 +50,21 @@ body {
     border-left: 2px solid var(--botao-ativo); 
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
+} 
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+
+}
+.botoes {
+     display: block;
 }
 
 .botoes { 
     display: block;
 }
 
-.ativo {
+.botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
@@ -65,10 +75,6 @@ body {
     border-radius: 0 0 40px 40px;
 }
 
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
 
 .aba-conteudo-titulo-principal {
     font-size: 28px;
@@ -88,6 +94,25 @@ body {
 .aba-conteudo {
     display: none;
 }
+  
+.contador {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.contador-digito {
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+} 
+
+.contador-digito {
+    font-size: 80px;
+    margin: 0;
+} 
+
+
 
 
 @media screen and (min-width: 768px) { 
